@@ -1,1 +1,9 @@
+# Клонируйте репозиторий
+git clone https://github.com/ваш-username/python-lab-work.git
+cd python-lab-work
 
+# Создайте структуру папок
+mkdir -p src/modules tests docs data/input data/output
+
+# Создайте необходимые файлы
+touch .gitignore README.md requirements.txt src/main.py src/modules/__init__.py tests/__init__.py docs/report.md
