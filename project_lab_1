@@ -1,9 +1,13 @@
-# Клонируйте репозиторий
-git clone https://github.com/ваш-username/python-lab-work.git
-cd python-lab-work
+git clone https://github.com/MissKolts/project_lab_1.git
+cd project_lab_1
 
-# Создайте структуру папок
-mkdir -p src/modules tests docs data/input data/output
+mkdir -p app/{api,core,db,models,crud,schemas,services} alembic tests
+touch main.py .env .gitignore README.md requirements.txt
 
-# Создайте необходимые файлы
-touch .gitignore README.md requirements.txt src/main.py src/modules/__init__.py tests/__init__.py docs/report.md
+touch app/__init__.py app/core/config.py app/db/session.py app/db/base.py
+touch app/api/api_v1/api.py app/api/api_v1/endpoints/{auth,users,search}.py
+
+git checkout -b main
+git checkout -b develop
+git checkout -b feature/auth
+git checkout -b feature/fuzzy-search
